@@ -1,16 +1,15 @@
 package part3.Ex9_MinMaxFloatDoubleExponential;
 
+//: object/Ex9.java
+// Выведите наибольшее и наименьшее число в экспоненциальной
+// записи для типов float и double
 public class Ex9 {
     public static void main(String[] args) {
-        float flMax = Float.MAX_VALUE;
-        float flMin = Float.MIN_VALUE;
-        double dbMax = Double.MAX_VALUE;
-        double dbMin = Double.MIN_VALUE;
 
-        System.out.println("Max float = " + flMax);
-        System.out.println("Min float = " + flMin);
+        System.out.println("Max float = " + Float.MAX_VALUE);
+        System.out.println("Min float = " + Float.MIN_VALUE);
 
-        System.out.println("Max double = " + dbMax);
-        System.out.println("Min double = " + dbMin);
+        System.out.println("Max double = " + Double.MAX_VALUE);
+        System.out.println("Min double = " + Double.MIN_VALUE);
     }
-}
+} ///:~
