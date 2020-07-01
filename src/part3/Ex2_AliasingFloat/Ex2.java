@@ -1,4 +1,4 @@
-package part3.Ex2_Aliasing_Float;
+package part3.Ex2_AliasingFloat;
 
 class Aliasing {
     float num;

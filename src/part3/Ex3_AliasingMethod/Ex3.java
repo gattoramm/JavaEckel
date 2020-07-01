@@ -1,4 +1,4 @@
-package part3.Ex3_Aliasing_Method;
+package part3.Ex3_AliasingMethod;
 
 class Letter{
     char c;
