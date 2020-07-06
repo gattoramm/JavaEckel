@@ -1,10 +1,9 @@
-//: Ex14.java
+package part3.Ex14_StringOperations;
+
 // Напишите метод, который получает два аргумента String, выполняет с ними
 // все операции логических сравнений и выводит результаты. Для операций ==
 // и != также выполните проверку equals(). Вызовите свой метод из main()
 // для нескольких разных объектов String.
-
-package part3.Ex14_StringOperations;
 
 public class Ex14 {
     static void f(boolean b) {

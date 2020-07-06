@@ -1,6 +1,5 @@
 package part5.Ex1_DefaultInit;
 
-//: object/Ex1.java
 //Создайте класс с неинициализированной ссылкой на String.
 // Покажите, что Java инициализирует ссылку значением null
 
@@ -12,4 +11,4 @@ public class Ex1 {
         else
             System.out.println(str);
     }
-}///:~
+}

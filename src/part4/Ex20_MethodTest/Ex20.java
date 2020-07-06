@@ -1,5 +1,5 @@
 package part4.Ex20_MethodTest;
-//: object/Ex20.java
+
 // Измените метод test, чтобы он получал два дополнительных аргумента begin и end,
 // а значение testval проверялось на принадлежность к диапазону [begin, end]
 // (с включением границ)
@@ -18,4 +18,4 @@ public class Ex20 {
         System.out.println("23 in [23, 56]: " + test(23,23,56));
         System.out.println("56 in [23, 56]: " + test(56,23,56));
     }
-}///:~
+}

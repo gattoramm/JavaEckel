@@ -1,11 +1,26 @@
 package part5.Ex2_TwoObjConstrAndInit;
 
+//Создайте класс с полем String, инизиализируемым в точке определения,
+// и другим полем, инизиализируемым конструктором. Чем отличаются эти
+// два подхода?
+
 public class Ex2 {
-    class SomeString {
-        String str;
+    static class SomeString {
+        String someStr;
+        SomeString() {
+            someStr = "SomeStr";
+        }
+
+        SomeString(String str) {
+            someStr = str;
+        }
     }
 
     public static void main(String[] args) {
-        String str1 = new String("asd");
+        SomeString str1 = new SomeString();
+        SomeString str2 = new SomeString("asd");
+
+        System.out.println(str1.someStr);
+        System.out.println(str2.someStr);
     }
 }
