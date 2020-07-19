@@ -17,7 +17,7 @@ public class Ex4 {
     }
 
     public static void main(String[] args) {
-        SomeStr str1 = new SomeStr();
-        SomeStr str2 = new SomeStr("World!");
+        new SomeStr();
+        new SomeStr("World!");
     }
 }

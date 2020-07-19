@@ -10,14 +10,15 @@ public class Ex8 {
         public void MethodOne() {
             MethodTwo();
             this.MethodTwo();
+            System.out.println("MethodOne()");
         }
 
         public void MethodTwo() {
-
+            System.out.println("MethodTwo()");
         }
     }
 
     public static void main(String[] args) {
-        ToThisOrNotToThis some1 = new ToThisOrNotToThis();
+        new ToThisOrNotToThis().MethodOne();
     }
 }

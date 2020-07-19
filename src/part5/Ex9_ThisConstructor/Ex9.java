@@ -6,30 +6,44 @@ package part5.Ex9_ThisConstructor;
 public class Ex9 {
     static class ThisConstructor {
 
-        String str = "DEFAULT STRING!";
-        int someNum = 10;
-        public ThisConstructor(int num) {
-            System.out.println("Конструктор с параметром int, s = " + num);
+        public ThisConstructor() {
+            this("12",12);
+            System.out.println("Внутри конструктора без параметров");
         }
 
-        public ThisConstructor(String s) {
-            this.someNum = someNum;
-            System.out.println("Вызвали конструктор с аргументом int = " + someNum + " внутри конструктора с аргументом String = " + s);
-            System.out.println("Конструктор с параметром String, s = " + s);
+        public ThisConstructor(int someNum) {
+            this();
+
+            System.out.println("Внутри конструктора с параметром int, s = " + someNum);
         }
 
-        ThisConstructor(String s, int num) {
-            this(s);
-            System.out.println("Вызвали конструктор с аргументом String = " + s + " внутри конструктора с аргументом int = " + num);
-            System.out.println("Конструктор с аргументом String = " + s + " и int = " + num);
+        public ThisConstructor(String someStr) {
+            this(12);
+
+            System.out.println("Внутри конструктора с параметром String, s = " + someStr);
+        }
+
+        ThisConstructor(String someStr, int someNum) {
+
+            System.out.print("Внутри конструктора с параметром String, s = " + someStr);
+            System.out.println(" и int = " + someNum);
         }
     }
 
     public static void main(String[] args) {
-        ThisConstructor thisConstr1 = new ThisConstructor(5);
-        System.out.println("********************************************");
-        ThisConstructor thisConstr2 = new ThisConstructor("World");
-        System.out.println("********************************************");
-        ThisConstructor thisConstr3 = new ThisConstructor("WWW",3);
+        System.out.println("        Вызываем конструктор без параметров");
+        new ThisConstructor();
+        System.out.println();
+
+        System.out.println("        Вызываем конструктор с int");
+        new ThisConstructor(5);
+        System.out.println();
+
+        System.out.println("        Вызываем конструктор с String");
+        new ThisConstructor("World");
+        System.out.println();
+
+        System.out.println("        Вызываем конструктор с int и String");
+        new ThisConstructor("WWW",3);
     }
 }
