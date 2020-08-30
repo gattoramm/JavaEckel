@@ -1,4 +1,4 @@
-package part5.Initialization.ArrayNew;
+package part5.Initialization.ArrayInt;
 
 import java.util.Arrays;
 import java.util.Random;
